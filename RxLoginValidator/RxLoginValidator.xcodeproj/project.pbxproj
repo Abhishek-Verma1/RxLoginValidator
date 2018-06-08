@@ -12,9 +12,12 @@
 		D65EE44020CB2192004390F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65EE43E20CB2192004390F9 /* Main.storyboard */; };
 		D65EE44220CB2192004390F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65EE44120CB2192004390F9 /* Assets.xcassets */; };
 		D65EE44520CB2192004390F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65EE44320CB2192004390F9 /* LaunchScreen.storyboard */; };
+		F2285783420DFE95E638BF61 /* Pods_RxLoginValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CC6D79029F6FF48CAC104A /* Pods_RxLoginValidator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08CC6D79029F6FF48CAC104A /* Pods_RxLoginValidator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxLoginValidator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFE701060905ED765B5C7DD /* Pods-RxLoginValidator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLoginValidator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RxLoginValidator/Pods-RxLoginValidator.debug.xcconfig"; sourceTree = "<group>"; };
 		D65EE43720CB2192004390F9 /* RxLoginValidator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxLoginValidator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D65EE43A20CB2192004390F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D65EE43C20CB2192004390F9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +25,7 @@
 		D65EE44120CB2192004390F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65EE44420CB2192004390F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D65EE44620CB2192004390F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA42EFB264FA06531422AF76 /* Pods-RxLoginValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLoginValidator.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxLoginValidator/Pods-RxLoginValidator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2285783420DFE95E638BF61 /* Pods_RxLoginValidator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B2B5FED508F3F8B145CCDC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08CC6D79029F6FF48CAC104A /* Pods_RxLoginValidator.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CF43CC8226708144ADFC973 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AAFE701060905ED765B5C7DD /* Pods-RxLoginValidator.debug.xcconfig */,
+				EA42EFB264FA06531422AF76 /* Pods-RxLoginValidator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D65EE42E20CB2192004390F9 = {
 			isa = PBXGroup;
 			children = (
 				D65EE43920CB2192004390F9 /* RxLoginValidator */,
 				D65EE43820CB2192004390F9 /* Products */,
+				5CF43CC8226708144ADFC973 /* Pods */,
+				5B2B5FED508F3F8B145CCDC1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D65EE44920CB2192004390F9 /* Build configuration list for PBXNativeTarget "RxLoginValidator" */;
 			buildPhases = (
+				22BD3454EA4A23AB1FE63943 /* [CP] Check Pods Manifest.lock */,
 				D65EE43320CB2192004390F9 /* Sources */,
 				D65EE43420CB2192004390F9 /* Frameworks */,
 				D65EE43520CB2192004390F9 /* Resources */,
+				333DC19AF2F7CED65F1ECB21 /* [CP] Embed Pods Frameworks */,
+				F91F79532C7F7E74E7909EC1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -130,6 +157,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		22BD3454EA4A23AB1FE63943 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		333DC19AF2F7CED65F1ECB21 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxLoginValidator/Pods-RxLoginValidator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F91F79532C7F7E74E7909EC1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RxLoginValidator/Pods-RxLoginValidator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D65EE43320CB2192004390F9 /* Sources */ = {
@@ -272,6 +347,7 @@
 		};
 		D65EE44A20CB2192004390F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AAFE701060905ED765B5C7DD /* Pods-RxLoginValidator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +362,7 @@
 		};
 		D65EE44B20CB2192004390F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA42EFB264FA06531422AF76 /* Pods-RxLoginValidator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
