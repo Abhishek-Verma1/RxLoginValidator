@@ -12,6 +12,7 @@
 		D65EE44020CB2192004390F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65EE43E20CB2192004390F9 /* Main.storyboard */; };
 		D65EE44220CB2192004390F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D65EE44120CB2192004390F9 /* Assets.xcassets */; };
 		D65EE44520CB2192004390F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65EE44320CB2192004390F9 /* LaunchScreen.storyboard */; };
+		D65EE44D20CB24B4004390F9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65EE44C20CB24B4004390F9 /* LoginViewModel.swift */; };
 		F2285783420DFE95E638BF61 /* Pods_RxLoginValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 08CC6D79029F6FF48CAC104A /* Pods_RxLoginValidator.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		D65EE44120CB2192004390F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D65EE44420CB2192004390F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D65EE44620CB2192004390F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D65EE44C20CB24B4004390F9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EA42EFB264FA06531422AF76 /* Pods-RxLoginValidator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxLoginValidator.release.xcconfig"; path = "Pods/Target Support Files/Pods-RxLoginValidator/Pods-RxLoginValidator.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,6 +82,7 @@
 			children = (
 				D65EE43A20CB2192004390F9 /* AppDelegate.swift */,
 				D65EE43C20CB2192004390F9 /* ViewController.swift */,
+				D65EE44C20CB24B4004390F9 /* LoginViewModel.swift */,
 				D65EE43E20CB2192004390F9 /* Main.storyboard */,
 				D65EE44120CB2192004390F9 /* Assets.xcassets */,
 				D65EE44320CB2192004390F9 /* LaunchScreen.storyboard */,
@@ -213,6 +216,7 @@
 			files = (
 				D65EE43D20CB2192004390F9 /* ViewController.swift in Sources */,
 				D65EE43B20CB2192004390F9 /* AppDelegate.swift in Sources */,
+				D65EE44D20CB24B4004390F9 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
